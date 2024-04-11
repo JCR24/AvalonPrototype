@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvalonPrototype.Pages.Page1"
+             Title="Avalon"
+             BackgroundColor="White"
+             NavigatedTo="OnArriving">
+    <StackLayout>
+        <Label Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+        <Entry Text="Enter Id" />
+        <Button 
+            Text="Go To Instructor View" 
+            Clicked = "InstructorView_Clicked"
+            />
+
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"> 
+        <Label Text="Insert ID Binding" />
+        <Label Text="Insert Name" />
+    </StackLayout>
+    <StackLayout>
+    <!--
+        <ListView 
+            ItemsSouce="{Binding AllEventDates}"
+            />
+            -->
+        <Label Text="ListView of all event dates"/>
+        <Button 
+            Text="Go to ScheduleAbsence"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="ScheduleAbsence_Clicked"
+            />
+    </StackLayout>
+
+    <VerticalStackLayout>
+        <Button
+            Text = "Add an event date"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            />
+        <Button
+            Text = "Create an Advertizement"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+        <Button 
+            Text="Create a student" />
+
+    </VerticalStackLayout>
+</ContentPage>
